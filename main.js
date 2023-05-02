@@ -1,7 +1,3 @@
-//CAJERO SEGUNDA PRE ENTREGA
-
-//CLASE USURARIO
-
 class Usuario {
     constructor(usuario, contraseña, dni, saldo, limite) {
         this.usuario= usuario;
@@ -20,7 +16,6 @@ const usuario4= new Usuario("Salcedo Tadeo", 4458, 39370309,1000000, 650000);
 const arrayUsuarios= [usuario1, usuario2, usuario3, usuario4];
 console.log(arrayUsuarios);
 
-//MENU
 
 function menu(){
     alert("Bienvendio al Cajero de CoderBank");
@@ -37,9 +32,6 @@ function limite(){
     console.log(`El usuario ${usuario.usuario} aumento su limite en: $ ${aumentoLimite}`);
 }
 
-
-//FUNCION REGISTRO
-
 function nuevoUsuario(){
     let nombre= prompt("Ingrese nombre del usuario: ");
     let contraseña= parseInt(prompt("Ingrese una contraseña: "));
@@ -51,7 +43,6 @@ function nuevoUsuario(){
     alert(`Bienvenido ${nombre}`);
 }
 
-//FUNCION ELIMINAR CUENTA
 
 function eliminarUsuario(){
     let dni = parseInt(prompt("Ingrese el DNI del usuario: "));
@@ -61,7 +52,6 @@ function eliminarUsuario(){
     console.log(arrayUsuarios);
 }
 
-//FUNCION RETIRO
 
 function retiro(){
     let dni= parseInt(prompt("Ingrese el DNI del cliente: "));
@@ -72,7 +62,6 @@ function retiro(){
     console.log(`El usuario ${usuario.usuario} retiró: $ ${monto}`);
 }
 
-//FUNCION DEPOSITO
 
 function deposito(){
     let dni= parseInt(prompt("Ingrese el DNI del cliente: "));
@@ -83,13 +72,11 @@ function deposito(){
     console.log(`El usuario ${usuario.usuario} depositó: $ ${monto}`);
 }
 
-//FUNCION SALIR
 
 function salir(){
     alert("Gracias por utilizar nuestros servicios.");
 }
 
-//PROGRAMA
 
 let opcion= menu();
 switch (opcion){
